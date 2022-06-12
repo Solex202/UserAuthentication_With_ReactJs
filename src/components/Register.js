@@ -14,7 +14,7 @@ const Register = ({setAlert}) => {
 
     const headers={
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin' : 'https://user-registration-app-frontend.herokuapp.com/'
+        // 'Access-Control-Allow-Origin' : 'https://user-registration-app-frontend.herokuapp.com/'
     }
 
     const handleRegister = (e) => {
