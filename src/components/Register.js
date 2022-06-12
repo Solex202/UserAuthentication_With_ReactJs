@@ -19,7 +19,7 @@ const Register = ({setAlert}) => {
             setAlert({ishow:true, status:"error", message:"invalid details"})
         } 
         console.log(userDetails);
-        axios.post("https://user-registration-application1.herokuapp.com/api/v1/user/createUser", userDetails)
+        axios.post("https://cors-anywhere.herokuapp.com/https://user-registration-application1.herokuapp.com/api/v1/user/createUser", userDetails)
             .then(data => {
                 console.log(data);
                 setAlert({ishow:true, status:"success", message:"Registration successful"})
