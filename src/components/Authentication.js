@@ -15,9 +15,8 @@ const Authentication = ({setIsSubmited}) => {
         }
     }
 return (
-    <div className='auth-container'>
-        <div className="auth-body">
-            <div style={{display: "flex", justifyContent:"space-between"}}>
+    <div className='auth-container '>
+           <div style={{display: "flex", justifyContent:"space-between"}}>
                 
                 {alert.ishow && 
                 <div className='alert' style={
@@ -27,8 +26,10 @@ return (
                         {alert.message}
                 </div>}
                 
-                <button class="btn bg-secondary" onClick = {switchHandler} >{auth === "login"? "Register" : "Login"}</button>
+                <button className="btn bg-secondary ml-5 pl-4 pr-4 pt-3 pb-3 mt-5" onClick = {switchHandler} >{auth === "login"? "Register" : "Login"}</button>
             </div>
+        <div className="auth-body w-100 p-5 d-flex justify-content-center align-items-center">
+         
             {auth === "login" ? <Login setIsSubmited = {setIsSubmited} setAlert = {setAlert} /> : <Register setAlert = {setAlert} />}
             
         </div>

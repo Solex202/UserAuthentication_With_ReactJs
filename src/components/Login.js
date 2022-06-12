@@ -11,7 +11,7 @@ const Login = ({setAlert}) => {
     const handleLogin = (e)=>{
 
         const userDetails = {email, password}
-        axios.post("http://localhost:8080/api/v1/user/login", userDetails)
+        axios.post("https://user-registration-application1.herokuapp.com/api/v1/user/login", userDetails)
             .then(data =>{
             navigate("/welcomePage")
             setAlert({ishow:true, status:"success", message:"Registration successful"})

@@ -22,7 +22,7 @@ const EthData = () => {
     function sumClosedValuesForEth (values) {
         let sum = 0
         values.forEach(value => sum = sum + value.c)
-        return sum/15
+        return sum/values.length
     }
 
     const navigateBack =() =>{

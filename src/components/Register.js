@@ -19,7 +19,7 @@ const Register = ({setAlert}) => {
             setAlert({ishow:true, status:"error", message:"invalid details"})
         } 
         console.log(userDetails);
-        axios.post("http://localhost:8080/api/v1/user/createUser", userDetails)
+        axios.post("https://user-registration-application1.herokuapp.com/api/v1/user/createUser", userDetails)
             .then(data => {
                 console.log(data);
                 setAlert({ishow:true, status:"success", message:"Registration successful"})
@@ -44,7 +44,9 @@ const Register = ({setAlert}) => {
             navigate("/listOfUsers")
     }
     return (
-        <div className='parent bg-primary' >
+        <div className='parent bg-primary w-100' >
+            <button type='summit' class='btn bg-success float-right' onClick={getList}>view all users</button>
+
             <div className='container div-center '>
                 <h1>REGISTER</h1>
                 <div>
@@ -105,11 +107,19 @@ const Register = ({setAlert}) => {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                     </div>
-                    <button type="submit" class="btn bg-secondary"  onClick={(e) => handleRegister(e)}>Register</button>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center">
+                            <button className="btn btn-default bg-secondary mt-5 mb-5 w-50" onClick={(e) => handleRegister(e)}>Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className='d-flex justify-self-center '>
+                    <button type="submit" class="btn btn-default bg-secondary mt-5 w-50"  onClick={(e) => handleRegister(e)}>Register</button>
+                    </div> */}
 
                 </div>
             </div>
-            <button onClick={getList}>view all users</button>
         </div>
     
     )

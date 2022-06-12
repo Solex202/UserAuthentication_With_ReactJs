@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const ListOfUsers = () => {
+
+  let navigate = useNavigate()
 
   const [users, setUsers] = useState([])
   const [user, setUser] = useState({firstName:"", lastName:"", email:""})
@@ -42,6 +45,10 @@ const ListOfUsers = () => {
         } 
       )
   }
+
+  const navigateBack =() =>{
+    navigate('/')
+  }
 return (
     
       <>
@@ -73,6 +80,7 @@ return (
         }
       )}
   </tbody>
+  <button type='button' class='btn btn-primary' onClick={navigateBack}>back</button>
 </table>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -98,6 +106,7 @@ return (
       </div>
     </div>
   </div>
+  
 </div>
 </>
     

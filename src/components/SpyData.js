@@ -19,7 +19,7 @@ const SpyData = () => {
     function sumClosedValuesForSpy (newValues) {
         let sum = 0
         newValues.forEach(value => sum = sum + value.c)
-        return sum/14
+        return sum/newValues.length
     }
 
     const navigateBack = () =>{
