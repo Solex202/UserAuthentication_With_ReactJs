@@ -11,7 +11,7 @@ const ListOfUsers = () => {
     
   useEffect(()=>{
     
-    users.length === 0 && axios.get("http://localhost:8080/api/v1/user/getAllUsers")
+    users.length === 0 && axios.get("https://user-registration-application1.herokuapp.com/api/v1/user/getAllUsers")
       .then(data=>{
           console.log(data.data);
           setUsers(data.data)
@@ -27,7 +27,7 @@ const ListOfUsers = () => {
   }
 
   const handleEdit = () => {
-    axios.patch(`http://localhost:8080/api/v1/user/updateUser/${user.email}`, user).then(
+    axios.patch(`https://user-registration-application1.herokuapp.com/api/v1/user/updateUser/${user.email}`, user).then(
       data => {
         console.log(data)
         let newusers = users.map(data => data.email === user.email ? {firstName : user.firstName, lastName: user.lastName, email : user.email} : data)
@@ -37,7 +37,7 @@ const ListOfUsers = () => {
   }
 
   const handleDelete = (email) => {
-      axios.delete(`http://localhost:8080/api/v1/user/deleteUser/${email}`).then(
+      axios.delete(`https://user-registration-application1.herokuapp.com/api/v1/user/deleteUser/${email}`).then(
         data => {
           console.log(data)
           let newusers = users.filter(data => data.email !== email )
