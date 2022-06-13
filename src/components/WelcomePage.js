@@ -25,7 +25,7 @@ const WelcomePage = () => {
 
   return (
 
-    <div className='text-center' style={{backgroundImage: `url(${bg})`, minHeight:'100vh'}}>
+    <div className='text-center' style={{backgroundImage: `url(${bg})`, minHeight:'100vh', minWidth:'100vw'}}>
       <h1 className='mb-5 mt-5 bg-danger'>Welcome to Crypto Data page</h1> 
       <div className='d-flex flex-row justify-content-around'>
         <div className=''>
