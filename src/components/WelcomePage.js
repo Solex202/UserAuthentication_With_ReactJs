@@ -30,15 +30,15 @@ const WelcomePage = () => {
       <div className='d-flex flex-row justify-content-around'>
         <div className=''>
           <h3>For Eth data:</h3>
-          <buttton type='summit' class='btn bg-primary'  onClick = {navigateEth}>click here</buttton>
+          <buttton type='summit' className='btn bg-primary'  onClick = {navigateEth}>click here</buttton>
         </div>
         <div className=''>
           <h3>For Spy data:</h3>
-          <button type='summit' class='btn bg-primary' onClick={navigateSpy}>click here</button>
+          <button type='summit' className='btn bg-primary' onClick={navigateSpy}>click here</button>
         </div>
         <div>
           <h3>For Future data:</h3>
-          <button type='summit' class='btn bg-primary' onClick={navigateFutureData}>click here</button>
+          <button type='summit' className='btn bg-primary' onClick={navigateFutureData}>click here</button>
         </div>
 
       </div>

@@ -28,6 +28,7 @@ const EthData = () => {
     const navigateBack =() =>{
         navigate('/welcomePage')
     }
+    
 return (
     <div className='container'>
         <div>

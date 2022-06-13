@@ -34,9 +34,9 @@ return (
         <div className='container div-center '>
             <h1 className='text-center'>LOGIN</h1>
             <div>
-                <label class="form-group">Email</label>
+                <label className="form-group">Email</label>
                 <input
-                    class="form-control"
+                    className="form-control"
                     placeholder="enter email"
                     type="email"
                     required
@@ -46,10 +46,10 @@ return (
                 />
             </div>
             <div>
-                <label class="form-group">Password</label>
+                <label className="form-group">Password</label>
                 <input
                     type="password"
-                    class="form-control"
+                    className="form-control"
                     id="exampleInputPassword1"
                     placeholder="Password"
                     value={password}
@@ -58,7 +58,7 @@ return (
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
-            <button class="btn bg-secondary" onClick={handleLogin}>Login</button>
+            <button className="btn bg-secondary" onClick={handleLogin}>Login</button>
         </div>
     </div>
 )

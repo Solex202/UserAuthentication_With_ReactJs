@@ -55,8 +55,8 @@ const Register = ({setAlert}) => {
             <div className='container div-center '>
                 <h1>REGISTER</h1>
                 <div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">First Name</label>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">First Name</label>
                         <input
                             type="email"
                             class="form-control"
@@ -65,10 +65,10 @@ const Register = ({setAlert}) => {
                             required
                             onChange={(e) => setFirstName(e.target.value)} />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Last Name</label>
                         <input
-                            class="form-control"
+                            className="form-control"
                             placeholder="enter last name"
                             type='text'
                             value={lastName}
@@ -78,9 +78,9 @@ const Register = ({setAlert}) => {
                     </div>
 
                     <div>
-                        <label class="form-group">Email</label>
+                        <label className="form-group">Email</label>
                         <input
-                            class="form-control"
+                            className="form-control"
                             placeholder="Enter Email"
                             type="email"
                             required
@@ -89,10 +89,10 @@ const Register = ({setAlert}) => {
                         />
                     </div>
                     <div>
-                        <label class="form-group">Password</label>
+                        <label className="form-group">Password</label>
                         <input
                             type="password"
-                            class="form-control"
+                            className="form-control"
                             id="exampleInputPassword1"
                             placeholder="Enter Password"
                             value={password}
@@ -101,10 +101,10 @@ const Register = ({setAlert}) => {
                         />
                     </div>
                     <div>
-                        <label class="form-group">ConfirmPassword</label>
+                        <label className="form-group">ConfirmPassword</label>
                         <input
                             type="password"
-                            class="form-control"
+                            className="form-control"
                             id="exampleInputPassword1"
                             placeholder="Enter Password"
                             required
@@ -119,10 +119,7 @@ const Register = ({setAlert}) => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className='d-flex justify-self-center '>
-                    <button type="submit" class="btn btn-default bg-secondary mt-5 w-50"  onClick={(e) => handleRegister(e)}>Register</button>
-                    </div> */}
-
+                    
                 </div>
             </div>
         </div>
