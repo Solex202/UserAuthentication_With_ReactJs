@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom"
-import bg from "../assests/pics.jpg"
+import bg from "../assests/pics2.jpg"
 
 
 const WelcomePage = () => {
