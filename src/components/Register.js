@@ -99,6 +99,7 @@ const Register = ({setAlert}) => {
                             required
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                         <h6>password must be at least 8 characters or more</h6>
                     </div>
                     <div>
                         <label className="form-group">ConfirmPassword</label>
@@ -110,9 +111,11 @@ const Register = ({setAlert}) => {
                             required
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
+                            
                         />
+                       
                     </div>
-                    <h3>password must be at least 8 characters or more</h3>
+                    
                     <div className="container">
                         <div className="row">
                             <div className="col text-center">
