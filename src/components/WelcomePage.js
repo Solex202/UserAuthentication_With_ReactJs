@@ -30,7 +30,7 @@ const WelcomePage = () => {
       <div className='d-flex flex-row justify-content-around'>
         <div className=''>
           <h3>For Eth data:</h3>
-          <buttton type='summit' className='btn bg-primary'  onClick = {navigateEth}>click here</buttton>
+          <buttton type='summit' className='btn bg-primary' onClick = {navigateEth}>click here</buttton>
         </div>
         <div className=''>
           <h3>For Spy data:</h3>
@@ -40,9 +40,7 @@ const WelcomePage = () => {
           <h3>For Future data:</h3>
           <button type='summit' className='btn bg-primary' onClick={navigateFutureData}>click here</button>
         </div>
-
       </div>
-
       <div className="container">
           <div className="row">
               <div className="col text-center">

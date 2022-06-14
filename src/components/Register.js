@@ -20,7 +20,7 @@ const Register = ({setAlert}) => {
     const handleRegister = (e) => {
         e.preventDefault();
         const userDetails = { firstName, lastName, email, password, confirmPassword }
-        if(email === "" || password === "" || firstName=== "" || lastName=== ""|| confirmPassword=== ""){
+        if(email === "" || password === "" || firstName=== "" || lastName=== "" || confirmPassword=== ""){
             setAlert({ishow:true, status:"error", message:"invalid details"})
         } 
         console.log(userDetails);
@@ -112,6 +112,7 @@ const Register = ({setAlert}) => {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                     </div>
+                    <h3>password must be at least 8 characters or more</h3>
                     <div className="container">
                         <div className="row">
                             <div className="col text-center">

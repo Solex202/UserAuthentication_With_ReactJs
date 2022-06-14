@@ -50,8 +50,7 @@ const ListOfUsers = () => {
     navigate('/')
   }
 return (
-    
-      <>
+    <>
       <table class="table">
         <thead>
     <tr>
@@ -76,8 +75,7 @@ return (
             <button type="button" class="btn btn-danger " onClick={()=>handleDelete(user.email)}>Delete</button>
           </td>
         </tr>
-          
-        }
+      }
       )}
   </tbody>
   <button type='button' class='btn btn-primary' onClick={navigateBack}>Go back</button>
