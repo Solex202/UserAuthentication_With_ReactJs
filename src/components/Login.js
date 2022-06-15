@@ -32,7 +32,7 @@ const Login = ({setAlert}) => {
         )
     }
 return (
-    <div className='bg-primary w-100 h-100' >
+    <div className='bg-primary ' style={{minHeight:'30vh', minWidth:'80vw'}}>
         <div className='container div-center '>
             <h1 className='text-center'>LOGIN</h1>
             <div>
@@ -60,7 +60,7 @@ return (
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
-            <button className="btn bg-secondary" onClick={handleLogin}>Login</button>
+            <button className="btn bg-secondary" style={{color:'white', marginTop:'11px'}} onClick={handleLogin}>Login</button>
         </div>
     </div>
 )

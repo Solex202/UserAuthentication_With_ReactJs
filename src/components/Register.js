@@ -10,7 +10,6 @@ const Register = ({setAlert}) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
-    const [users, setUsers] = useState([])
 
     const headers={
         'Content-Type': 'application/json',
@@ -49,10 +48,10 @@ const Register = ({setAlert}) => {
             navigate("/listOfUsers")
     }
     return (
-        <div className='parent bg-primary w-100' >
-            <button type='summit' class='btn bg-success float-right' onClick={getList}>view all users</button>
+        <div className='parent bg-primary w-100' style={{minHeight:'80vh', minWidth:'50vw'}}>
+            <button type='summit' class='btn bg-danger float-right' style={{marginTop:'14px', marginRight:'8px', color:'white'}}  onClick={getList}>view all users</button>
 
-            <div className='container div-center '>
+            <div className='container div-center mt-5' >
                 <h1>REGISTER</h1>
                 <div>
                     <div className="form-group">
@@ -95,11 +94,12 @@ const Register = ({setAlert}) => {
                             className="form-control"
                             id="exampleInputPassword1"
                             placeholder="Enter Password"
+                            minLength={8}
                             value={password}
                             required
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                         <h6>password must be at least 8 characters or more</h6>
+                        <h6>Password must be at least 8 characters or more</h6>
                     </div>
                     <div>
                         <label className="form-group">ConfirmPassword</label>
@@ -108,6 +108,7 @@ const Register = ({setAlert}) => {
                             className="form-control"
                             id="exampleInputPassword1"
                             placeholder="Enter Password"
+                            minLength={8}
                             required
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
@@ -119,7 +120,7 @@ const Register = ({setAlert}) => {
                     <div className="container">
                         <div className="row">
                             <div className="col text-center">
-                            <button className="btn btn-default bg-secondary mt-5 mb-5 w-50" onClick={(e) => handleRegister(e)}>Register</button>
+                            <button className="btn btn-default bg-secondary mt-5 mb-5 w-50" style={{color:'white'}} onClick={(e) => handleRegister(e)}>Register</button>
                             </div>
                         </div>
                     </div>

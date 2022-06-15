@@ -26,7 +26,7 @@ return (
                         {alert.message}
                 </div>}
                 
-                <button className="btn bg-secondary ml-5 pl-4 pr-4 pt-3 pb-3 mt-5" onClick = {switchHandler} >{auth === "login"? "Register" : "Login"}</button>
+                <button className="btn bg-secondary ml-5 pl-4 pr-4 pt-3 pb-3 mt-5" style={{color:'white'}} onClick = {switchHandler} >{auth === "login"? "Register" : "Login"}</button>
             </div>
         <div className="auth-body w-100 p-5 d-flex justify-content-center align-items-center">
          
