@@ -17,9 +17,10 @@ const Login = ({setAlert}) => {
         axios.post("https://user-registration-application1.herokuapp.com/api/v1/user/login", userDetails)
             .then(response =>{
                 console.log(response);
+                navigate("/welcomePage")
             setAlert({ishow:true, status:"success", message:"Login successful"})
-            setTimeout(() => setAlert({ishow:false, status:"", message:""}), 3000)
-            navigate("/welcomePage")
+            setTimeout(() => setAlert({ishow:false, status:"", message:""}), 5000)
+           
             console.log("Response -> ", response)
     //         if(email === "" || password ===""){
     //         setTimeout(() => setAlert({ishow:true, status:"success", message:"invalid details"}), 5000)
