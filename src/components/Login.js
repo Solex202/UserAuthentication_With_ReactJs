@@ -22,9 +22,6 @@ const Login = ({setAlert}) => {
             setTimeout(() => setAlert({ishow:false, status:"", message:""}), 5000)
            
             console.log("Response -> ", response)
-    //         if(email === "" || password ===""){
-    //         setTimeout(() => setAlert({ishow:true, status:"success", message:"invalid details"}), 5000)
-    // }       
         setEmail("")
         setPassword("")
         }).catch(
@@ -37,7 +34,7 @@ const Login = ({setAlert}) => {
         )
     }
 return (
-    <div className='bg-primary ' style={{minHeight:'30vh', minWidth:'80vw'}}>
+    <div className='bg-primary ' style={{minHeight:'30vh', minWidth:'80vw', borderRadius:'18px'}}>
         <div className='container div-center '>
             <h1 className='text-center'>LOGIN</h1>
             <div>

@@ -48,7 +48,7 @@ const Register = ({setAlert}) => {
             navigate("/listOfUsers")
     }
     return (
-        <div className='parent bg-primary w-100' style={{minHeight:'80vh', minWidth:'50vw'}}>
+        <div className='parent bg-primary w-100' style={{minHeight:'80vh', minWidth:'50vw', borderRadius:'18px'}}>
             <button type='summit' class='btn bg-danger float-right' style={{marginTop:'14px', marginRight:'8px', color:'white'}}  onClick={getList}>view all users</button>
 
             <div className='container div-center mt-5' >
@@ -114,7 +114,6 @@ const Register = ({setAlert}) => {
                             onChange={(e) => setConfirmPassword(e.target.value)}
                             
                         />
-                       
                     </div>
                     
                     <div className="container">
